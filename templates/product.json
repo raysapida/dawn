@@ -6,12 +6,14 @@
         "vendor": {
           "type": "text",
           "settings": {
-            "text_style": "uppercase",
-            "text": "{{ product.vendor }}"
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
           }
         },
         "title": {
-          "type": "title"
+          "type": "title",
+          "settings": {
+          }
         },
         "subtitle": {
           "type": "text",
@@ -21,22 +23,59 @@
           }
         },
         "price": {
-          "type": "price"
+          "type": "price",
+          "settings": {
+          }
         },
         "variant_picker": {
-          "type": "variant_picker"
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
         },
         "quantity_selector": {
-          "type": "quantity_selector"
+          "type": "quantity_selector",
+          "settings": {
+          }
         },
         "buy_buttons": {
-          "type": "buy_buttons"
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false
+          }
+        },
+        "3ee2b94e-5901-4181-a7cf-fa8364874975": {
+          "type": "text",
+          "settings": {
+            "text": "Made in the mountains of Raymonda, Filipines, blah blah blah.",
+            "text_style": "body"
+          }
         },
         "description": {
-          "type": "description"
+          "type": "description",
+          "settings": {
+          }
         },
         "share": {
-          "type": "share"
+          "type": "share",
+          "settings": {
+          }
+        },
+        "d64db213-ebec-4a6b-bf91-4586a5b776bd": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Ingredients",
+            "content": "<p>Love<\/p><p>Happiness<\/p>",
+            "page": "",
+            "icon": "none"
+          }
+        },
+        "fb50135f-e38b-499f-a395-cf115a6ff63f": {
+          "type": "popup",
+          "settings": {
+            "link_label": "How we are different?",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -47,16 +86,65 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "3ee2b94e-5901-4181-a7cf-fa8364874975",
         "description",
-        "share"
-      ]
+        "share",
+        "d64db213-ebec-4a6b-bf91-4586a5b776bd",
+        "fb50135f-e38b-499f-a395-cf115a6ff63f"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "enable_video_looping": false
+      }
     },
     "product-recommendations": {
-      "type": "product-recommendations"
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "You may also like",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_vendor": false
+      }
+    },
+    "1629327536a4bbbf71": {
+      "type": "image-with-text",
+      "blocks": {
+        "1629327536a4bbbf71-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text"
+          }
+        },
+        "1629327536a4bbbf71-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "1629327536a4bbbf71-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1629327536a4bbbf71-0",
+        "1629327536a4bbbf71-1",
+        "1629327536a4bbbf71-2"
+      ],
+      "settings": {
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "layout": "image_first"
+      }
     }
   },
   "order": [
     "main",
-    "product-recommendations"
+    "product-recommendations",
+    "1629327536a4bbbf71"
   ]
 }
